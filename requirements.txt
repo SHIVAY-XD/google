@@ -1,0 +1,6 @@
+pyrogram==1.4.16
+pymongo
+requests
+bing_image_downloader
+dnspython
+tgcrypto==1.2.2

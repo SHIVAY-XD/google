@@ -1,5 +1,5 @@
 {
-    "name": GoogleBot",    
+    "name": GoogleBot"   
     "env": {
         "BOT_TOKEN": {
             "description": "telegram bot token here",

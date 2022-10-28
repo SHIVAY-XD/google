@@ -1,44 +1,22 @@
 {
-    "name": "Google Bot",
-    "description": "https://telegra.ph/file/1f63de6e3ce65ef6b9f00.jpg",
-    "repository": "https://github.com/TEAMSTARWORLD/google",
-    "logo": "",
-    "keywords": [
-        "python",
-        "telegram"
-    ],
-    "buildpacks": [{
-    "url": "heroku/python"
-  }],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-     },
-       "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
+    "name": Google Bot",    
     "env": {
         "BOT_TOKEN": {
-            "description": "Your bot token",
-            "value": "",
-            "required": true
+            "description": "telegram bot token here",
+            "required": true       
         },
         "API_ID": {
-            "description": "Get from https://my.telegram.org",
-            "value": "",
+            "description": "telegram api id here",
             "required": true
         },
         "API_HASH": {
-            "description": "Get from https://my.telegram.org",
-            "value": "",
-            "required": true       
+            "description": "telegram api hash here",
+            "required": true
         }
-    }
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+    ]
 }
